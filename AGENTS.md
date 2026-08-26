@@ -6,13 +6,13 @@ only the executable React experience for the Electronics domain.
 ## AI tool entry path
 
 Read this file, the README, and the nearest source/test contract before changing
-files. Treat `domain.commerce.ui` as the shared renderer contract dependency;
-do not copy shared renderer infrastructure back into this app.
+files. The renderer contract required by this reusable storefront template lives
+inside this app so the repository remains self-contained.
 
 ## Change rules
 
 - Electronics-specific UX belongs in this repository.
-- Shared renderer contracts belong in `domain.commerce.ui`.
+- Template renderer contracts required at runtime belong in this repository.
 - Backend business logic belongs in `nodics.ai`.
 - Electronics reference data belongs in the `agora.electronics` Kickoff module.
 - Do not add Apparel or Telco renderer files to this app.
